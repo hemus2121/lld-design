@@ -18,5 +18,3 @@
 
 9.For every profile for whom a video is in progress, we want to know their last watch timestamp.
 
-
-![](/Users/hemanth/Downloads/Netflix.png "Netflix Design")
