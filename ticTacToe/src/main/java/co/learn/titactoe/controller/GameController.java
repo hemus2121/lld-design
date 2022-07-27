@@ -25,7 +25,7 @@ public class GameController {
     }
 
     public void makeMove(Game game){
-        game.makeMove();;
+        game.makeMove();
     }
 
     public boolean undo(Game game) throws EmptyMoveUndoOperationException {
@@ -33,11 +33,13 @@ public class GameController {
     }
 
     public Player getWinner(Game game){
-        return game.getWinner();
+         return game.getWinner();
     }
     public GameStatusEnum getGameStatus(Game game){
+
         return game.getGameStatusEnum();
     }
+
     public void display(Game game){
         game.getBoard().display();
     }

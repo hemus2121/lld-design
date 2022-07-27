@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 public class HumanPlayer extends  Player {
 
-    public HumanPlayer(Symbol symbol){
-        super(symbol, PlayerTypeEnum.HUMAN);
+    public HumanPlayer(PlayerTypeEnum playerTypeEnum, Symbol symbol, String playerName){
+        super(symbol, playerTypeEnum, playerName);
     }
     @Override
     Move makeMove(Board board) {

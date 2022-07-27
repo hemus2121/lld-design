@@ -9,8 +9,8 @@ public class Bot extends Player{
     private BotPlayingStrategy botPlayingStrategy;
     private BotDifficultyLevelEnum botDifficultyLevelEnum;
 
-    public Bot(Symbol symbol,BotDifficultyLevelEnum botDifficultyLevelEnum ){
-        super(symbol, PlayerTypeEnum.BOT);
+    public Bot(PlayerTypeEnum playerTypeEnum, Symbol symbol,BotDifficultyLevelEnum botDifficultyLevelEnum , String name){
+        super(symbol, playerTypeEnum, name);
         this.botDifficultyLevelEnum = botDifficultyLevelEnum;
         this.botPlayingStrategy = new BotPlayingStrategyFactory().createBotPlayingStrategyForDifficultyLevel(this.botDifficultyLevelEnum);
     }

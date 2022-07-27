@@ -6,9 +6,22 @@ public abstract class Player {
     private Symbol symbol;
     private PlayerTypeEnum playerTypeEnum;
 
-    Player(Symbol symbol, PlayerTypeEnum playerTypeEnum){
+    private String name;
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
+    Player(Symbol symbol, PlayerTypeEnum playerTypeEnum,String name){
         this.symbol = symbol;
         this.playerTypeEnum = playerTypeEnum;
+        this.name = name;
     }
 
     public Symbol getSymbol() {
